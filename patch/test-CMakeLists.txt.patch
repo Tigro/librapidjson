@@ -1,5 +1,4 @@
 diff --git a/rapidjson/test/CMakeLists.txt b/rapidjson/test/CMakeLists.txt
-index c698af4..60819c5 100644
 --- a/rapidjson/test/CMakeLists.txt
 +++ b/rapidjson/test/CMakeLists.txt
 @@ -1,20 +1,45 @@

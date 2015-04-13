@@ -1,5 +1,4 @@
 diff --git a/rapidjson/test/unittest/unittest.h b/rapidjson/test/unittest/unittest.h
-index 800fbab..75bd4a4 100644
 --- a/rapidjson/test/unittest/unittest.h
 +++ b/rapidjson/test/unittest/unittest.h
 @@ -47,6 +47,10 @@
@@ -14,7 +13,6 @@ index 800fbab..75bd4a4 100644
  inline unsigned StrLen(const Ch* s) {
      const Ch* p = s;
 diff --git a/rapidjson/test/unittest/valuetest.cpp b/rapidjson/test/unittest/valuetest.cpp
-index 846b1c8..27f8f2d 100644
 --- a/rapidjson/test/unittest/valuetest.cpp
 +++ b/rapidjson/test/unittest/valuetest.cpp
 @@ -22,6 +22,30 @@
