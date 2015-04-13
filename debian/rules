@@ -15,13 +15,8 @@ CMAKE_EXTRA_FLAGS := \
 
 
 apply-patches:
-	sleep 600
-	ls -l
-	ls -l debian
-	ls -l patch
-	ls -l rapidjson
-	patch -p1 --verbose < patch/test-CMakeLists.txt.patch
-	patch -p1 --verbose < patch/test-unittest.patch
+	TMP=/tmp patch -p1 --verbose < patch/test-CMakeLists.txt.patch
+	TMP=/tmp patch -p1 --verbose < patch/test-unittest.patch
 
 configure-librapidjson: apply-patches
 	dh_auto_configure --buildsystem=cmake \
