@@ -19,8 +19,8 @@ apply-patches:
 	ls -l debian
 	ls -l patch
 	ls -l rapidjson
-	patch -p1 < patch/test-CMakeLists.txt.patch
-	patch -p1 < patch/test-unittest.patch
+	patch -p1 --verbose < patch/test-CMakeLists.txt.patch
+	patch -p1 --verbose < patch/test-unittest.patch
 
 configure-librapidjson: apply-patches
 	dh_auto_configure --buildsystem=cmake \
